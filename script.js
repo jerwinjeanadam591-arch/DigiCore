@@ -668,9 +668,29 @@ if (!document.querySelector('style[data-notifications]')) {
 // ===== AUTO-PLAY TESTIMONIALS CAROUSEL =====
 document.addEventListener('DOMContentLoaded', function() {
     const testimonialCards = document.querySelectorAll('.testimonial-card');
+    const indicatorsContainer = document.querySelector('.testimonials-indicators');
     
     if (testimonialCards.length > 1) {
         let currentIndex = 0;
+        let autoPlayInterval;
+        
+        // Create indicators
+        testimonialCards.forEach((_, index) => {
+            const indicator = document.createElement('div');
+            indicator.className = 'indicator';
+            if (index === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(index));
+            indicatorsContainer.appendChild(indicator);
+        });
+        
+        const indicators = document.querySelectorAll('.indicator');
+        const testimonialGrid = document.querySelector('.testimonials-grid');
+        
+        function updateIndicators() {
+            indicators.forEach((ind, index) => {
+                ind.classList.toggle('active', index === currentIndex);
+            });
+        }
         
         function rotateTestimonials() {
             // Remove active class from all cards
@@ -679,22 +699,47 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add active class to current card
             testimonialCards[currentIndex].classList.add('active');
             
+            // Update indicators
+            updateIndicators();
+            
             // Move to next card
             currentIndex = (currentIndex + 1) % testimonialCards.length;
         }
         
+        function goToSlide(index) {
+            currentIndex = index;
+            rotateTestimonials();
+            
+            // Reset auto-play
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
+        }
+        
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(rotateTestimonials, 5000);
+        }
+        
         // Initial setup - show first card
         testimonialCards[0].classList.add('active');
+        updateIndicators();
+        startAutoPlay();
         
-        // Rotate every 6 seconds
-        setInterval(rotateTestimonials, 6000);
+        // Pause on hover
+        testimonialGrid.addEventListener('mouseenter', () => {
+            clearInterval(autoPlayInterval);
+        });
         
-        // Add click handlers for manual navigation
-        testimonialCards.forEach((card, index) => {
-            card.addEventListener('click', function() {
-                currentIndex = index;
-                rotateTestimonials();
-            });
+        testimonialGrid.addEventListener('mouseleave', () => {
+            startAutoPlay();
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') {
+                goToSlide((currentIndex + 1) % testimonialCards.length);
+            } else if (e.key === 'ArrowLeft') {
+                goToSlide((currentIndex - 1 + testimonialCards.length) % testimonialCards.length);
+            }
         });
     }
 });
