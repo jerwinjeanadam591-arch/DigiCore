@@ -6,9 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
 
 :root {
-    --primary-color: #0066cc;
-    --primary-light: #e6f0ff;
-    --secondary-color: #004a99;
+    --primary-color: #4d94ff;
+    --primary-light: #e8f2ff;
+    --secondary-color: #0066cc;
     --accent-color: #ff5555;
     --success-color: #2ecc71;
     --warning-color: #f39c12;
@@ -467,7 +467,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), #0052a3);
+    background: linear-gradient(135deg, var(--primary-color), #2b7dd8);
     color: white;
     box-shadow: var(--shadow-md);
 }
