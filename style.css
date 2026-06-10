@@ -2151,6 +2151,27 @@ h3 {
     position: relative;
 }
 
+.portfolio-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-icon-box i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-icon-box i {
+    transform: scale(1.2) rotateZ(5deg);
+    color: var(--secondary-color);
+}
+
 .portfolio-info {
     padding: 30px;
     flex-grow: 1;
