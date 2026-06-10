@@ -6,13 +6,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
 
 :root {
-    --primary-color: #2c3e50;
-    --primary-light: #ecf0f1;
-    --secondary-color: #34495e;
-    --accent-color: #e74c3c;
-    --success-color: #27ae60;
-    --warning-color: #f39c12;
-    --danger-color: #c0392b;
+    --primary-color: #2563eb;
+    --primary-light: #dbeafe;
+    --secondary-color: #1d4ed8;
+    --accent-color: #06b6d4;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
     --light-bg: #f7f9fc;
     --dark-text: #1a1a2e;
     --light-text: #6c757d;
@@ -217,7 +217,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 50%, #546e7a 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 50%, #60a5fa 100%);
     color: white;
     padding: 140px 0 80px;
     position: relative;
@@ -467,7 +467,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), #34495e);
+    background: linear-gradient(135deg, var(--primary-color), #1d4ed8);
     color: white;
     box-shadow: var(--shadow-md);
 }
