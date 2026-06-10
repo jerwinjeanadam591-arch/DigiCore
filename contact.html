@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Digital Core IT Solutions</title>
+    <meta name="description" content="Contact Digital Core IT Solutions for quotes, support, or consultations. Available 24/7 via phone, email, and WhatsApp.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Digital Core</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active cta-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We're Here to Help - Available 24/7</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+255764830663">+255 764 830 663</a></p>
+                    <p class="info-desc">Call us during business hours or for emergencies</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/255764830663" target="_blank">Message Us</a></p>
+                    <p class="info-desc">Quick response on WhatsApp - available 24/7</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
+                    <p class="info-desc">Send us detailed inquiries anytime</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Iringa, Tanzania</p>
+                    <p class="info-desc">Serving clients locally and nationwide</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Business Hours</h3>
+                    <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                    <p class="info-desc">24/7 Emergency Support Available</p>
+                </div>
+                <div class="contact-info-card">
+                    <div class="info-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Support</h3>
+                    <p>Immediate Response</p>
+                    <p class="info-desc">Quick turnaround on all inquiries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Select Service --</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Mobile App">Mobile App Development</option>
+                                <option value="Management System">Management System</option>
+                                <option value="Network Setup">Network Setup & Installation</option>
+                                <option value="CCTV Installation">CCTV Installation</option>
+                                <option value="Computer Repair">Computer Repair & Maintenance</option>
+                                <option value="Software Installation">Software Installation</option>
+                                <option value="Data Recovery">Data Recovery</option>
+                                <option value="Technical Support">24/7 Technical Support</option>
+                                <option value="Other">Other Service</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="privacy" required>
+                                <span>I agree to the Privacy Policy and Terms & Conditions</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-note">✓ We respond within 24 hours | All information is secure and confidential</p>
+                    </form>
+                </div>
+
+                <div class="contact-map-wrapper">
+                    <h2>Our Location</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1289854657056!2d35.74006!3d-8.3865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184373f48a3e5e5d%3A0x1!2sIringa%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1234567890" width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-info">
+                        <h3>Visit Us</h3>
+                        <p>Based in Iringa, Tanzania</p>
+                        <p>We serve the entire region and can travel for larger projects.</p>
+                        <a href="https://wa.me/255764830663?text=Hi%20Digital%20Core%2C%20can%20we%20schedule%20a%20meeting%3F" class="btn btn-secondary" target="_blank">Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Buttons -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2>Quick Contact</h2>
+            <p>Need immediate assistance? Choose your preferred contact method:</p>
+            <div class="quick-contact-buttons">
+                <a href="tel:+255764830663" class="quick-btn">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+                <a href="https://wa.me/255764830663?text=Hello%20Digital%20Core!%20I%20need%20assistance" class="quick-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="mailto:jerwinjeanadam591@gmail.com" class="quick-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Contact Us -->
+    <section class="why-contact">
+        <div class="container">
+            <h2>Why Choose Digital Core for Your IT Needs?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Free Consultation</h3>
+                    <p>Get expert advice on your IT challenges without any cost or obligation</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Quick Response</h3>
+                    <p>We respond to inquiries within 24 hours, often much faster</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden costs - you'll know exactly what your project will cost</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Experienced Team</h3>
+                    <p>Work with seasoned IT professionals with years of proven experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Support -->
+    <section class="emergency-support">
+        <div class="container">
+            <h3>Need Emergency IT Support?</h3>
+            <p>Call us immediately at <a href="tel:+255764830663">+255 764 830 663</a> for urgent technical issues</p>
+            <p>24/7 emergency support is available for critical system failures</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Core IT Solutions</h4>
+                    <p>Professional IT and network solutions company delivering innovative, reliable, and affordable services in Iringa, Tanzania.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+255764830663">+255 764 830 663</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Iringa, Tanzania</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM | 24/7 Emergency Support</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#website">Website Development</a></li>
+                        <li><a href="services.html#mobile">Mobile App Dev</a></li>
+                        <li><a href="services.html#network">Network Setup</a></li>
+                        <li><a href="services.html#cctv">CCTV Installation</a></li>
+                        <li><a href="services.html#recovery">Data Recovery</a></li>
+                        <li><a href="services.html#support">24/7 Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Core IT Solutions Company Limited. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

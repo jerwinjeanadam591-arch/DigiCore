@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Digital Core IT Solutions</title>
+    <meta name="description" content="View our completed projects: websites, mobile apps, networks, and IT solutions we've delivered.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Digital Core</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="cta-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Proven Success Across Multiple Projects & Industries</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterPortfolio('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterPortfolio('web')">Web Development</button>
+                <button class="filter-btn" onclick="filterPortfolio('mobile')">Mobile Apps</button>
+                <button class="filter-btn" onclick="filterPortfolio('network')">Networks</button>
+                <button class="filter-btn" onclick="filterPortfolio('cctv')">CCTV Systems</button>
+                <button class="filter-btn" onclick="filterPortfolio('systems')">Management Systems</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/website-ecommerce.jpg" alt="Business Website - Retail Store">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Business Website - Retail Store</h3>
+                        <p>Responsive e-commerce website with product catalog, shopping cart, and online payment integration</p>
+                        <span class="portfolio-tag">Web Development</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/website-corporate.jpg" alt="Company Profile Website">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Company Profile Website</h3>
+                        <p>Professional corporate website for a construction company with project showcase and client gallery</p>
+                        <span class="portfolio-tag">Web Development</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/website-portfolio.jpg" alt="Hotel Booking Website">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hotel Booking Website</h3>
+                        <p>Tourism website with online reservation system, room showcase, and WhatsApp integration</p>
+                        <span class="portfolio-tag">Web Development</span>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/mobile-app-delivery.jpg" alt="Delivery Management App">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Delivery Management App</h3>
+                        <p>Android app for restaurant delivery with real-time order tracking and customer notifications</p>
+                        <span class="portfolio-tag">Mobile App</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/mobile-app-business.jpg" alt="Retail Management App">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Retail Management App</h3>
+                        <p>Business app for inventory tracking, sales management, and customer relationship management</p>
+                        <span class="portfolio-tag">Mobile App</span>
+                    </div>
+                </div>
+
+                <!-- Management Systems -->
+                <div class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/system-school-management.jpg" alt="School Management System">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-school"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>School Management System</h3>
+                        <p>Complete system for student records, attendance, grades, fees, and parent communication</p>
+                        <span class="portfolio-tag">Management System</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/system-clinic.jpg" alt="Clinic Management System">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Clinic Management System</h3>
+                        <p>Healthcare system for patient records, appointments, prescriptions, and billing</p>
+                        <span class="portfolio-tag">Management System</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="systems">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/system-inventory.jpg" alt="Inventory Management System">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Inventory Management System</h3>
+                        <p>Stock tracking, warehouse management, and automated reordering for manufacturing company</p>
+                        <span class="portfolio-tag">Management System</span>
+                    </div>
+                </div>
+
+                <!-- Network Projects -->
+                <div class="portfolio-item" data-category="network">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/network-setup.jpg" alt="Corporate Office Network">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Office Network</h3>
+                        <p>Enterprise network setup with structured cabling, WiFi coverage, and network security</p>
+                        <span class="portfolio-tag">Network Installation</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="network">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/network-setup.jpg" alt="Educational Institution Network">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Educational Institution Network</h3>
+                        <p>Multi-campus network with WiFi, labs setup, and bandwidth optimization</p>
+                        <span class="portfolio-tag">Network Installation</span>
+                    </div>
+                </div>
+
+                <!-- CCTV Projects -->
+                <div class="portfolio-item" data-category="cctv">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/cctv-system.jpg" alt="Shopping Mall Security System">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Shopping Mall Security System</h3>
+                        <p>IP camera system with DVR, 24/7 recording, and mobile remote access</p>
+                        <span class="portfolio-tag">CCTV Installation</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="cctv">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/cctv-system.jpg" alt="Bank Security Installation">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Bank Security Installation</h3>
+                        <p>High-security CCTV system with vault monitoring and alert system</p>
+                        <span class="portfolio-tag">CCTV Installation</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="cctv">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/home-security.jpg" alt="Home Security System">
+                        <div class="portfolio-overlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Home Security System</h3>
+                        <p>Residential CCTV with doorbell camera and smartphone monitoring</p>
+                        <span class="portfolio-tag">CCTV Installation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stats -->
+    <section class="success-stats">
+        <div class="container">
+            <h2>Our Track Record</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <p>Websites Created</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">35+</div>
+                    <p>Mobile Apps</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <p>Management Systems</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">40+</div>
+                    <p>Network Projects</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <p>CCTV Installations</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Industries -->
+    <section class="client-industries">
+        <div class="container">
+            <h2>Industries We Serve</h2>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <i class="fas fa-school"></i>
+                    <h3>Education</h3>
+                    <p>Schools and universities</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Healthcare</h3>
+                    <p>Clinics and hospitals</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Retail</h3>
+                    <p>Shops and malls</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-bank"></i>
+                    <h3>Finance</h3>
+                    <p>Banks and finance institutions</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hospitality</h3>
+                    <p>Hotels and restaurants</p>
+                </div>
+                <div class="industry-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Manufacturing</h3>
+                    <p>Production and logistics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Digital Core transformed our business with their web development. The website is stunning and has increased our online sales by 40%."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Mwase</strong>
+                        <span>E-commerce Store Owner</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The management system they built for our school has made administration so much easier. Highly professional team!"</p>
+                    <div class="testimonial-author">
+                        <strong>Dr. James Kipchoge</strong>
+                        <span>School Principal</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Network setup and CCTV installation were done professionally and on budget. Their support team is always available when needed."</p>
+                    <div class="testimonial-author">
+                        <strong>Peter Nyambiri</strong>
+                        <span>Office Manager, Corporate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want to See Your Project Here?</h2>
+            <p>Let's build something amazing together. Contact us for a free consultation.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
+                <a href="https://wa.me/255764830663?text=I%20want%20to%20discuss%20a%20project" class="btn btn-secondary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Let's Talk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Core IT Solutions</h4>
+                    <p>Professional IT and network solutions company delivering innovative, reliable, and affordable services in Iringa, Tanzania.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+255764830663">+255 764 830 663</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Iringa, Tanzania</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM | 24/7 Emergency Support</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#website">Website Development</a></li>
+                        <li><a href="services.html#mobile">Mobile App Dev</a></li>
+                        <li><a href="services.html#network">Network Setup</a></li>
+                        <li><a href="services.html#cctv">CCTV Installation</a></li>
+                        <li><a href="services.html#recovery">Data Recovery</a></li>
+                        <li><a href="services.html#support">24/7 Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Core IT Solutions Company Limited. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

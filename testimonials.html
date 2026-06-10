@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Digital Core IT Solutions</title>
+    <meta name="description" content="Read success stories and testimonials from our satisfied clients across various industries.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Digital Core</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="cta-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Client Testimonials</h1>
+            <p>Real Feedback from Satisfied Clients</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="testimonials-full">
+        <div class="container">
+            <!-- Animated Testimonials Carousel -->
+            <div class="testimonials-carousel-section">
+                <h3 style="text-align: center; margin-bottom: 40px; color: var(--primary-color);">Live Client Testimonials</h3>
+                <div class="animated-testimonials-carousel">
+                    <div class="carousel-testimonial active" data-index="0">
+                        <div class="testimonial-content-animated">
+                            <div class="testimonial-quote-icon">"</div>
+                            <p class="testimonial-text-animated">Digital Core created our business website and it completely transformed our online presence. We've seen a 40% increase in inquiries since launch. The team was professional, responsive, and delivered on time.</p>
+                            <div class="testimonial-attribution">
+                                <strong>John Mwase</strong>
+                                <span>Business Owner, Retail Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <span class="carousel-dot active" onclick="goToTestimonial(0)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(1)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(2)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(3)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(4)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(5)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(6)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(7)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(8)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(9)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(10)"></span>
+                    <span class="carousel-dot" onclick="goToTestimonial(11)"></span>
+                </div>
+            </div>
+
+            <!-- Static Testimonials Grid -->
+            <h3 style="text-align: center; margin-top: 80px; margin-bottom: 40px; color: var(--dark-text);">All Client Testimonials</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JM</div>
+                        <div class="testimonial-meta">
+                            <h4>John Mwase</h4>
+                            <span>Business Owner, Retail Store</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Digital Core created our business website and it completely transformed our online presence. We've seen a 40% increase in inquiries since launch. The team was professional, responsive, and delivered on time."</p>
+                    <div class="testimonial-service">Website Development</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">GK</div>
+                        <div class="testimonial-meta">
+                            <h4>Grace Kipchoge</h4>
+                            <span>IT Manager, Educational Institution</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The network installation and ongoing support from Digital Core has been exceptional. We've had zero downtime since implementation, and their 24/7 support gives us peace of mind. Highly recommended!"</p>
+                    <div class="testimonial-service">Network Setup & Support</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">PN</div>
+                        <div class="testimonial-meta">
+                            <h4>Peter Njoroge</h4>
+                            <span>Operations Manager, Corporate Office</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Their data recovery service saved our business when we accidentally deleted critical files. The team recovered everything confidentially and professionally. Worth every shilling!"</p>
+                    <div class="testimonial-service">Data Recovery</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SM</div>
+                        <div class="testimonial-meta">
+                            <h4>Sarah Mwase</h4>
+                            <span>E-commerce Store Owner</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The custom mobile app they developed for our store has revolutionized our operations. Inventory management, order tracking, and customer communication all in one place. Outstanding work!"</p>
+                    <div class="testimonial-service">Mobile App Development</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">DR</div>
+                        <div class="testimonial-meta">
+                            <h4>Dr. James Kipchoge</h4>
+                            <span>School Principal</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Our school management system has simplified administrative tasks tremendously. Student records, attendance, grades - everything is now organized and accessible. The training was thorough and staff adapted quickly."</p>
+                    <div class="testimonial-service">Management System Development</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MB</div>
+                        <div class="testimonial-meta">
+                            <h4>Michael Banda</h4>
+                            <span>Hotel Manager</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The booking website they created has increased our reservations by 60%. Integration with WhatsApp and Google Maps works perfectly. Customer support is always there when we need help."</p>
+                    <div class="testimonial-service">Website Development</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">EK</div>
+                        <div class="testimonial-meta">
+                            <h4>Esther Kariuki</h4>
+                            <span>Security Manager, Shopping Mall</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Their CCTV installation is top-notch. Remote viewing from my phone, clear footage, and reliable 24/7 recording. Installation was clean and professional. I sleep better knowing our mall is secure."</p>
+                    <div class="testimonial-service">CCTV Installation</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RT</div>
+                        <div class="testimonial-meta">
+                            <h4>Rashid Toure</h4>
+                            <span>Manufacturing Manager</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Digital Core's inventory management system has reduced our stock discrepancies by 95%. The system is intuitive, fast, and reliable. Their training and support made implementation smooth."</p>
+                    <div class="testimonial-service">Management System</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">LM</div>
+                        <div class="testimonial-meta">
+                            <h4>Lucy Mamba</h4>
+                            <span>Clinic Owner</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The clinic management system has improved our patient care significantly. Appointment scheduling, medical records, and billing are all integrated. Digital Core's support team is always responsive."</p>
+                    <div class="testimonial-service">Healthcare Management System</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">CK</div>
+                        <div class="testimonial-meta">
+                            <h4>Charles Kipkemboi</h4>
+                            <span>IT Director, Bank</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Their computer repair and maintenance services have been invaluable. Quick response times, professional diagnostics, and effective solutions. Our downtime has been minimized significantly."</p>
+                    <div class="testimonial-service">Computer Repair & Maintenance</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">NK</div>
+                        <div class="testimonial-meta">
+                            <h4>Njeri Kipkemboi</h4>
+                            <span>Office Administrator</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The 24/7 support plan we subscribed to has been a lifesaver. Any issue gets resolved quickly by their knowledgeable team. Peace of mind is worth more than gold in today's digital world."</p>
+                    <div class="testimonial-service">24/7 Technical Support</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">DB</div>
+                        <div class="testimonial-meta">
+                            <h4>David Banda</h4>
+                            <span>Restaurant Owner</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The delivery tracking app they built for our restaurant has streamlined operations. Customers love being able to track their orders in real-time. Digital Core's innovative approach is impressive."</p>
+                    <div class="testimonial-service">Mobile App Development</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="testimonial-stats">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">180+</div>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Clients Choose Us -->
+    <section class="why-clients-choose" style="background: var(--light-bg); padding: 80px 0;">
+        <div class="container">
+            <h2>Why Clients Love Working With Us</h2>
+            <div class="reasons-grid" style="margin-top: 50px;">
+                <div class="reason">
+                    <div class="reason-number" style="font-size: 2.5rem; color: var(--primary-color);">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Responsive Support</h3>
+                    <p>Quick replies and effective solutions to all inquiries and issues</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-number" style="font-size: 2.5rem; color: var(--primary-color);">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Quality Work</h3>
+                    <p>High standards in every project we deliver</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-number" style="font-size: 2.5rem; color: var(--primary-color);">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trusted Partnership</h3>
+                    <p>Long-term relationships built on reliability</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-number" style="font-size: 2.5rem; color: var(--primary-color);">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>On-Time Delivery</h3>
+                    <p>Projects completed within agreed timelines</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-number" style="font-size: 2.5rem; color: var(--primary-color);">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Data Security</h3>
+                    <p>Your information is handled with utmost care</p>
+                </div>
+                <div class="reason">
+                    <div class="reason-number" style="font-size: 2.5rem; color: var(--primary-color);">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge solutions using latest technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Join Our Satisfied Clients?</h2>
+            <p>Let's build something amazing together</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-large">Get Started Now</a>
+                <a href="https://wa.me/255764830663?text=Hi%20Digital%20Core!%20I%20want%20to%20learn%20more" class="btn btn-secondary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Chat Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Digital Core IT Solutions</h4>
+                    <p>Professional IT and network solutions company delivering innovative, reliable, and affordable services in Iringa, Tanzania.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+255764830663">+255 764 830 663</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Iringa, Tanzania</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM | 24/7 Emergency Support</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#website">Website Development</a></li>
+                        <li><a href="services.html#mobile">Mobile App Dev</a></li>
+                        <li><a href="services.html#network">Network Setup</a></li>
+                        <li><a href="services.html#cctv">CCTV Installation</a></li>
+                        <li><a href="services.html#recovery">Data Recovery</a></li>
+                        <li><a href="services.html#support">24/7 Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Core IT Solutions Company Limited. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
