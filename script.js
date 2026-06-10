@@ -664,3 +664,37 @@ if (!document.querySelector('style[data-notifications]')) {
     `;
     document.head.appendChild(style);
 }
+
+// ===== AUTO-PLAY TESTIMONIALS CAROUSEL =====
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    if (testimonialCards.length > 1) {
+        let currentIndex = 0;
+        
+        function rotateTestimonials() {
+            // Remove active class from all cards
+            testimonialCards.forEach(card => card.classList.remove('active'));
+            
+            // Add active class to current card
+            testimonialCards[currentIndex].classList.add('active');
+            
+            // Move to next card
+            currentIndex = (currentIndex + 1) % testimonialCards.length;
+        }
+        
+        // Initial setup - show first card
+        testimonialCards[0].classList.add('active');
+        
+        // Rotate every 6 seconds
+        setInterval(rotateTestimonials, 6000);
+        
+        // Add click handlers for manual navigation
+        testimonialCards.forEach((card, index) => {
+            card.addEventListener('click', function() {
+                currentIndex = index;
+                rotateTestimonials();
+            });
+        });
+    }
+});
