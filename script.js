@@ -2,20 +2,49 @@
 // DIGITAL CORE IT SOLUTIONS - JAVASCRIPT
 // ===================================
 
-// Mobile menu toggle
+// Mobile menu toggle with body scroll prevention
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
 if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        
+        // Prevent body scroll when menu is open
+        if (navLinks.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
     });
 
     // Close menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = 'auto';
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-wrapper')) {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
     });
 }
 
