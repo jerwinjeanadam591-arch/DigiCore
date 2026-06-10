@@ -94,6 +94,42 @@ if (animatedText) {
     typeService();
 }
 
+// Hero Carousel Auto-play and Navigation
+const dots = document.querySelectorAll('.carousel-dot');
+const carouselSlides = document.querySelectorAll('.carousel-slide');
+let currentSlide = 0;
+let carouselInterval;
+
+function showSlide(n) {
+    currentSlide = (n + carouselSlides.length) % carouselSlides.length;
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Auto-play carousel every 3.33 seconds (matches animation duration)
+if (carouselSlides.length > 0) {
+    carouselInterval = setInterval(nextSlide, 3333);
+}
+
+// Dot navigation
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        clearInterval(carouselInterval);
+        showSlide(index);
+        // Resume auto-play after 5 seconds
+        carouselInterval = setInterval(nextSlide, 3333);
+    });
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
