@@ -2099,6 +2099,61 @@ h4 {
     justify-content: center;
 }
 
+/* Mobile-focused overrides to prevent overflow and improve layout on small screens */
+@media (max-width: 768px) {
+   /* Stack/condense hero area */
+   .hero {
+       padding: 40px 0;
+       overflow: visible;
+   }
+   .hero-left-image,
+   .hero-carousel,
+   .hero-subtitle-right {
+       display: none;
+   }
+   .hero-content {
+       text-align: left;
+       padding: 0 10px;
+   }
+
+   /* Reduce logo size and make nav usable */
+   .logo-img { height: 48px; }
+   .menu-toggle { display: flex; }
+   .nav-links { display: none; }
+   .nav-links.active { display: flex; }
+
+   /* Make cards and testimonials flow naturally instead of absolute positioning */
+   .testimonial-card {
+       position: relative !important;
+       height: auto !important;
+       transform: none !important;
+       visibility: visible !important;
+       opacity: 1 !important;
+       pointer-events: auto !important;
+       max-width: 100% !important;
+   }
+   .testimonials-preview::before,
+   .testimonials-preview::after { display: none; }
+
+   /* Ensure carousel and large images scale down */
+   .carousel-slide,
+   .carousel-slides { position: relative; height: auto; }
+   img, .growing-img, .portfolio-image, .reflective-image img { max-width: 100%; height: auto; }
+
+   /* Improve spacing and button sizing */
+   .container { padding-left: 16px; padding-right: 16px; }
+   .btn { width: 100%; padding: 10px 14px; }
+}
+
+@media (max-width: 480px) {
+   .hero-title { font-size: 1.5rem; }
+   .logo-img { height: 40px; }
+   h2 { font-size: 1.5rem; }
+   .container { padding: 0 12px; }
+   .btn { padding: 10px 12px; font-size: 0.95rem; }
+}
+
+
 .service-nav-btn {
     padding: 8px 16px;
     border: 2px solid var(--border-color);
