@@ -291,6 +291,15 @@ body {
     color: #ffc107;
 }
 
+.hero-subtitle-right {
+    position: absolute;
+    right: 30px;
+    bottom: 60px;
+    z-index: 3;
+    width: 35%;
+    text-align: right;
+}
+
 .hero-services-animation {
     font-size: 1.2rem;
     margin-bottom: 60px;
@@ -4262,3 +4271,15 @@ h4 {
         margin-bottom: 20px;
     }
 }
+
+/* ===== MOBILE-FRIENDLY FIXES ===== */
+img, video, iframe { max-width: 100%; height: auto; }
+.logo-img { max-height: 80px; height: auto; width: auto; }
+.container { width: 100%; box-sizing: border-box; padding-left: 16px; padding-right: 16px; }
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+  .menu-toggle { display: flex !important; }
+  .logo-img { max-height: 48px; }
+  .hero, .commitment-card, .reason-item, .stat-card { padding-left: 16px; padding-right: 16px; }
+}
+/* End mobile fixes */
