@@ -4706,47 +4706,126 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* Final mobile enforce */
 @media (max-width: 768px) {
-  html, body { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
-  * { min-width: 0 !important; word-break: break-word !important; }
+  html, body { width: 100% !important; max-width: 100vw !important; min-width: 0 !important; overflow-x: hidden !important; }
+  * { min-width: 0 !important; word-break: break-word !important; word-wrap: break-word !important; white-space: normal !important; }
   img, picture, video, iframe, svg { max-width: 100% !important; height: auto !important; }
-  .container, section, .page-header, .hero, .hero-content, .service-card, .project-card, .pricing-card, .contact-info-card, .map-info, .quick-btn, .testimonial-card, .footer-content, .page-breadcrumb, .contact-strip-content, .strip-item { width: 100% !important; max-width: 100% !important; }
+  .container,
+  section,
+  .page-header,
+  .hero,
+  .hero-content,
+  .service-card,
+  .project-card,
+  .pricing-card,
+  .contact-info-card,
+  .map-info,
+  .quick-btn,
+  .testimonial-card,
+  .footer-content,
+  .page-breadcrumb,
+  .contact-strip-content,
+  .strip-item,
+  .intro-highlights,
+  .services-grid,
+  .projects-preview,
+  .testimonials-grid,
+  .pricing-grid,
+  .reasons-grid,
+  .contact-info-grid,
+  .testimonial-stats .stats-grid,
+  .services-pricing-grid,
+  .why-grid,
+  .service-detail,
+  .pricing-table,
+  .faq-item,
+  .reason,
+  .industry-card { width: 100% !important; max-width: 100% !important; }
+  body { padding: 0 !important; margin: 0 !important; }
   .container { padding-left: 14px !important; padding-right: 14px !important; }
-  section { padding: 32px 0 !important; }
-  .page-header { padding: 40px 0 !important; }
-  .hero { padding: 50px 0 !important; }
+  section { padding: 24px 0 !important; }
+  .page-header { padding: 32px 0 !important; }
+  .hero { padding: 28px 16px !important; }
+  .quick-intro { padding: 28px 0 !important; }
   .hero-left-image,
   .hero-carousel,
   .hero-subtitle-right,
-  .hero-background { display: none !important; }
+  .hero-background,
+  .business-objectives::before,
+  .success-stats::before,
+  .success-stats::after,
+  .testimonials-preview::before,
+  .testimonials-preview::after,
+  .highlight-item::before,
+  .service-card::before,
+  .reason::after,
+  .portfolio-item::before,
+  .portfolio-image::after,
+  .overview-text h2::after,
+  .mission-card::before,
+  .cta-section::before,
+  .cta-section::after,
+  .footer::before,
+  .industry-card::before,
+  .reflective-image::before,
+  .reflective-image::after,
+  .page-header::before { display: none !important; }
   .hero-content { padding: 0 !important; }
-  .hero-title { font-size: clamp(1.7rem, 7vw, 2.2rem) !important; }
-  .hero-subtitle { font-size: clamp(1rem, 3vw, 1.1rem) !important; }
-  .hero-buttons { flex-direction: column !important; gap: 14px !important; }
+  .hero-title { font-size: clamp(1.6rem, 7vw, 2.1rem) !important; line-height: 1.2 !important; margin-bottom: 16px !important; }
+  .hero-subtitle { font-size: clamp(0.95rem, 3vw, 1.05rem) !important; margin-bottom: 20px !important; }
+  .hero-buttons { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
   .hero-buttons .btn { width: 100% !important; }
-  .contact-strip-content { justify-content: center !important; gap: 12px !important; white-space: normal !important; flex-wrap: wrap !important; }
-  .strip-item { width: 100% !important; justify-content: flex-start !important; flex-wrap: wrap !important; }
-  .strip-item i { min-width: 28px; }
   .btn, .cta-link, .quick-btn { width: 100% !important; min-height: 48px !important; }
+  .nav-wrapper { flex-wrap: wrap !important; gap: 12px !important; }
   .nav-links { display: none !important; position: fixed !important; top: 64px !important; left: 0 !important; right: 0 !important; bottom: 0 !important; padding: 20px 16px !important; background: rgba(15, 23, 42, 0.98) !important; overflow-y: auto !important; }
-  .nav-links a { width: 100% !important; padding: 16px 18px !important; }
+  .nav-links a { width: 100% !important; padding: 14px 18px !important; }
+  .menu-toggle { display: flex !important; }
+  .contact-strip-content { justify-content: center !important; gap: 12px !important; flex-wrap: wrap !important; }
+  .strip-item { width: 100% !important; justify-content: flex-start !important; flex-wrap: wrap !important; }
+  .strip-item span,
+  .strip-item a { white-space: normal !important; }
   .section-subtitle,
   p,
   li,
   .service-card p,
   .testimonial-card p,
   .contact-form-wrapper p,
-  .map-info p { line-height: 1.7 !important; }
+  .map-info p { line-height: 1.6 !important; }
+  .testimonial-card {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    margin-bottom: 22px !important;
+  }
+  .testimonial-card:last-child { margin-bottom: 0 !important; }
+  .testimonials-grid { position: relative !important; height: auto !important; min-height: auto !important; }
+  .contact-form-wrapper,
+  .contact-map-wrapper { padding: 24px !important; }
+  .map-container iframe { min-height: 260px !important; }
+  .quick-contact-buttons { flex-direction: column !important; }
+  .footer-bottom { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
+  .service-card,
+  .project-card,
+  .pricing-card,
+  .reason,
+  .contact-info-card,
+  .quick-btn { width: 100% !important; max-width: 100% !important; }
+  .section-subtitle { margin-bottom: 20px !important; }
+  .hero-buttons .btn { word-break: break-word !important; white-space: normal !important; }
 }
 
 @media (max-width: 420px) {
-  html, body { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
+  html, body { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; min-width: 0 !important; }
   .container { padding-left: 12px !important; padding-right: 12px !important; }
-  section { padding: 26px 0 !important; }
-  .page-header { padding: 30px 0 !important; }
-  .hero { padding: 35px 0 !important; }
-  .hero-title { font-size: 1.3rem !important; }
+  section { padding: 20px 0 !important; }
+  .page-header { padding: 24px 0 !important; }
+  .hero { padding: 24px 12px !important; }
+  .hero-title { font-size: 1.25rem !important; line-height: 1.3 !important; }
   .hero-subtitle { font-size: 0.95rem !important; }
-  .section-subtitle { margin-bottom: 18px !important; }
+  .section-subtitle { margin-bottom: 16px !important; }
   .hero-buttons .btn { font-size: 0.95rem !important; padding: 10px 14px !important; }
   .contact-strip-content { gap: 10px !important; }
 }
