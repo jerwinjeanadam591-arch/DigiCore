@@ -4706,23 +4706,25 @@ a, button { -webkit-tap-highlight-color: transparent; }
 
 /* Final mobile enforce */
 @media (max-width: 768px) {
-  html, body { overflow-x: hidden !important; }
-  .container, section, .page-header, .hero, .hero-content, .service-card, .project-card, .pricing-card, .contact-info-card, .map-info, .quick-btn, .testimonial-card, .footer-content { max-width: 100% !important; min-width: 0 !important; }
+  html, body { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
+  * { min-width: 0 !important; word-break: break-word !important; }
+  img, picture, video, iframe, svg { max-width: 100% !important; height: auto !important; }
+  .container, section, .page-header, .hero, .hero-content, .service-card, .project-card, .pricing-card, .contact-info-card, .map-info, .quick-btn, .testimonial-card, .footer-content, .page-breadcrumb, .contact-strip-content, .strip-item { width: 100% !important; max-width: 100% !important; }
   .container { padding-left: 14px !important; padding-right: 14px !important; }
-  section { padding: 35px 0 !important; }
-  .page-header { padding: 45px 0 !important; }
-  .hero { padding: 60px 0 !important; }
+  section { padding: 32px 0 !important; }
+  .page-header { padding: 40px 0 !important; }
+  .hero { padding: 50px 0 !important; }
   .hero-left-image,
   .hero-carousel,
   .hero-subtitle-right,
   .hero-background { display: none !important; }
   .hero-content { padding: 0 !important; }
-  .hero-title { font-size: clamp(1.7rem, 7vw, 2.4rem) !important; }
-  .hero-subtitle { font-size: clamp(1rem, 3vw, 1.15rem) !important; }
+  .hero-title { font-size: clamp(1.7rem, 7vw, 2.2rem) !important; }
+  .hero-subtitle { font-size: clamp(1rem, 3vw, 1.1rem) !important; }
   .hero-buttons { flex-direction: column !important; gap: 14px !important; }
   .hero-buttons .btn { width: 100% !important; }
-  .contact-strip-content { justify-content: center !important; gap: 12px !important; }
-  .strip-item { width: 100% !important; justify-content: flex-start !important; }
+  .contact-strip-content { justify-content: center !important; gap: 12px !important; white-space: normal !important; flex-wrap: wrap !important; }
+  .strip-item { width: 100% !important; justify-content: flex-start !important; flex-wrap: wrap !important; }
   .strip-item i { min-width: 28px; }
   .btn, .cta-link, .quick-btn { width: 100% !important; min-height: 48px !important; }
   .nav-links { display: none !important; position: fixed !important; top: 64px !important; left: 0 !important; right: 0 !important; bottom: 0 !important; padding: 20px 16px !important; background: rgba(15, 23, 42, 0.98) !important; overflow-y: auto !important; }
@@ -4737,15 +4739,16 @@ a, button { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 420px) {
-  html, body { overflow-x: hidden !important; }
+  html, body { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
   .container { padding-left: 12px !important; padding-right: 12px !important; }
-  section { padding: 28px 0 !important; }
-  .page-header { padding: 35px 0 !important; }
-  .hero { padding: 40px 0 !important; }
-  .hero-title { font-size: 1.35rem !important; }
-  .hero-subtitle { font-size: 0.98rem !important; }
-  .section-subtitle { margin-bottom: 20px !important; }
+  section { padding: 26px 0 !important; }
+  .page-header { padding: 30px 0 !important; }
+  .hero { padding: 35px 0 !important; }
+  .hero-title { font-size: 1.3rem !important; }
+  .hero-subtitle { font-size: 0.95rem !important; }
+  .section-subtitle { margin-bottom: 18px !important; }
   .hero-buttons .btn { font-size: 0.95rem !important; padding: 10px 14px !important; }
+  .contact-strip-content { gap: 10px !important; }
 }
 
 /* End professional polish */
