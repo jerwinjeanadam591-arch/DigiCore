@@ -671,6 +671,51 @@ h4 {
     letter-spacing: 0.3px;
 }
 
+.page-breadcrumb {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(37, 99, 235, 0.12);
+    color: var(--dark-text);
+    padding: 16px 0;
+}
+
+.page-breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+    color: var(--dark-text);
+}
+
+.page-breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+.page-breadcrumb li + li::before {
+    content: '›';
+    margin-right: 0.75rem;
+    color: var(--secondary-color);
+}
+
+.page-breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.page-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .page-breadcrumb {
+        padding: 14px 0;
+    }
+}
+
 /* ===== QUICK INTRO ===== */
 .quick-intro {
     background: var(--light-bg);

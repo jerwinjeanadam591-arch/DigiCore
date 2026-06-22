@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#2563eb">
     <meta name="description" content="Read our privacy practices for Digital Core IT Solutions and learn how we protect customer data and respect your privacy.">
     <meta name="keywords" content="IT services Iringa Tanzania, website development, mobile app development, network setup, CCTV installation, data recovery, technical support">
     <meta name="robots" content="index, follow">
@@ -20,6 +21,9 @@
     <meta name="twitter:image" content="https://digicoretech.co.tz/images/Growing-image.png">
     <title>Privacy Policy - Digital Core IT Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -30,7 +34,7 @@
                 <div class="logo">
                     <img src="images/logo.png" alt="DigiCore Logo" class="logo-img">
                 </div>
-                <button class="menu-toggle" id="menuToggle">
+                <button class="menu-toggle" id="menuToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -48,6 +52,15 @@
         </div>
     </nav>
     <main>
+
+    <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Privacy Policy</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Page Header -->
     <section class="page-header">
