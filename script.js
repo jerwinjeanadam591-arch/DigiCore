@@ -11,10 +11,13 @@ if (menuToggle) {
         e.stopPropagation();
         navLinks.classList.toggle('active');
         menuToggle.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('active') ? 'true' : 'false');
         
         // Prevent body scroll when menu is open
         if (navLinks.classList.contains('active')) {
             document.body.style.overflow = 'hidden';
+            const firstLink = navLinks.querySelector('a');
+            if (firstLink) firstLink.focus();
         } else {
             document.body.style.overflow = 'auto';
         }
@@ -25,6 +28,7 @@ if (menuToggle) {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = 'auto';
         });
     });
@@ -34,6 +38,7 @@ if (menuToggle) {
         if (!e.target.closest('.nav-wrapper')) {
             navLinks.classList.remove('active');
             menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = 'auto';
         }
     });
@@ -43,7 +48,9 @@ if (menuToggle) {
         if (e.key === 'Escape' && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
             menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
             document.body.style.overflow = 'auto';
+            menuToggle.focus();
         }
     });
 }

@@ -942,9 +942,9 @@ h4 {
     content: '';
     position: absolute;
     top: 0;
-    right: -200px;
-    width: 400px;
-    height: 400px;
+    right: -10vw;
+    width: min(40vw, 400px);
+    height: min(40vw, 400px);
     background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
     border-radius: 50%;
 }
@@ -952,10 +952,10 @@ h4 {
 .testimonials-preview::after {
     content: '';
     position: absolute;
-    bottom: -100px;
-    left: -200px;
-    width: 400px;
-    height: 400px;
+    bottom: -12vw;
+    left: -10vw;
+    width: min(40vw, 400px);
+    height: min(40vw, 400px);
     background: radial-gradient(circle, rgba(29, 78, 216, 0.08) 0%, transparent 70%);
     border-radius: 50%;
 }
@@ -1165,9 +1165,9 @@ h4 {
     content: '';
     position: absolute;
     top: -50%;
-    right: -10%;
-    width: 500px;
-    height: 500px;
+    right: -5%;
+    width: min(50vw, 500px);
+    height: min(50vw, 500px);
     background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
     border-radius: 50%;
     z-index: 0;
@@ -1177,9 +1177,9 @@ h4 {
     content: '';
     position: absolute;
     bottom: -30%;
-    left: -5%;
-    width: 400px;
-    height: 400px;
+    left: -3%;
+    width: min(40vw, 400px);
+    height: min(40vw, 400px);
     background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
     border-radius: 50%;
     z-index: 0;
