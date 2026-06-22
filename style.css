@@ -4507,9 +4507,11 @@ h2 { font-size: clamp(1.25rem, 3vw, 2rem); }
 
 /* Extra-small phones */
 @media (max-width: 420px) {
+  section { padding: 28px 0 !important; }
   .services-grid { grid-template-columns: 1fr; }
   .nav-links { top: 56px; left: 8px; right: 8px; padding: 8px; }
-  .cta-link { padding: 8px 12px; font-size: 0.95rem; }
+  .cta-link, .btn, .quick-btn, .nav-links a { min-height: 48px !important; }
+  .cta-link { padding: 10px 14px; font-size: 0.95rem; }
   .hero-title { font-size: 1.4rem; line-height: 1.25; }
 }
 
@@ -4544,11 +4546,18 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .hero-content { max-width: 100%; padding: 0; }
   .hero-buttons { flex-direction: column; align-items: stretch; gap: 14px; }
   .hero-buttons .btn { width: 100%; }
-  .btn { padding: 14px 20px !important; min-height: 48px !important; }
+  .btn, .cta-link, .quick-btn { padding: 14px 20px !important; min-height: 48px !important; }
   .btn-large { padding: 14px 24px !important; }
   h2 { font-size: clamp(1.6rem, 4vw, 2.2rem) !important; }
   h3 { font-size: clamp(1.1rem, 3.5vw, 1.3rem) !important; }
+  .page-header { padding: 60px 0 40px !important; }
+  .page-header h1 { font-size: clamp(2rem, 7vw, 2.8rem) !important; }
+  .page-header p { font-size: 1rem !important; }
   .section-subtitle { margin-bottom: 30px !important; }
+  .nav-links a { min-height: 48px !important; }
+  .quick-btn { width: 100% !important; }
+  .button-group, .cta-buttons { gap: 16px !important; }
+  .hero-background { display: none !important; }
   .contact-content,
   .footer-content,
   .services-grid,
