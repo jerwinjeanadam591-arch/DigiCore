@@ -342,6 +342,28 @@ window.addEventListener('resize', setupResponsiveBehavior);
 // Log page view for analytics
 console.log('Digital Core IT Solutions Website Loaded');
 
+(function(){
+  // Accessibility & performance enhancements
+  if (!document.querySelector('.skip-link')) {
+    const skip = document.createElement('a');
+    skip.href = '#main';
+    skip.className = 'skip-link';
+    skip.textContent = 'Skip to content';
+    document.body.insertBefore(skip, document.body.firstChild);
+    const main = document.querySelector('main') || document.querySelector('.hero') || document.querySelector('.container');
+    if (main && !main.id) main.id = 'main';
+  }
+
+  // Set native lazy loading for images without loading attribute
+  document.querySelectorAll('img:not([loading])').forEach(img => img.setAttribute('loading','lazy'));
+
+  // Ensure interactive elements have accessible tap targets
+  document.querySelectorAll('button, .btn, .nav-links a').forEach(el => {
+    el.style.touchAction = 'manipulation';
+    if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex','0');
+  });
+})();
+
 /* ===== ANIMATED TESTIMONIALS DATA ===== */
 const testimonials = [
     {
