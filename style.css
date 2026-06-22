@@ -4746,7 +4746,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .page-header { padding: 32px 0 !important; }
   .hero { padding: 28px 16px !important; }
   .quick-intro { padding: 28px 0 !important; }
-  .hero-left-image,
   .hero-carousel,
   .hero-subtitle-right,
   .hero-background,
@@ -4769,10 +4768,26 @@ a, button { -webkit-tap-highlight-color: transparent; }
   .reflective-image::before,
   .reflective-image::after,
   .page-header::before { display: none !important; }
+  .hero-left-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 22px !important;
+    border-right: none !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+  }
+  .hero-left-image .growing-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 14px !important;
+  }
   .hero-content { padding: 0 !important; }
   .hero-title { font-size: clamp(1.6rem, 7vw, 2.1rem) !important; line-height: 1.2 !important; margin-bottom: 16px !important; }
   .hero-subtitle { font-size: clamp(0.95rem, 3vw, 1.05rem) !important; margin-bottom: 20px !important; }
-  .hero-buttons { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
+  .hero-buttons { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; max-width: 420px !important; margin: 0 auto !important; }
   .hero-buttons .btn { width: 100% !important; }
   .btn, .cta-link, .quick-btn { width: 100% !important; min-height: 48px !important; }
   .nav-wrapper { flex-wrap: wrap !important; gap: 12px !important; }
