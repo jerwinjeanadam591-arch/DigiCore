@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Explore all IT services: web development, mobile apps, network setup, CCTV, data recovery, computer repair, 24/7 support, and more.">
     <meta name="keywords" content="IT services Iringa Tanzania, website development, mobile app development, network setup, CCTV installation, data recovery, technical support">
     <meta name="robots" content="index, follow">
@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
@@ -47,6 +47,7 @@
             </div>
         </div>
     </nav>
+    <main>
 
     <!-- Page Header -->
     <section class="page-header">
@@ -60,15 +61,15 @@
     <section class="services-nav">
         <div class="container">
             <div class="services-nav-buttons">
-                <button class="service-nav-btn active" onclick="scrollToService('website')">Website Dev</button>
-                <button class="service-nav-btn" onclick="scrollToService('mobile')">Mobile Apps</button>
-                <button class="service-nav-btn" onclick="scrollToService('management')">Management</button>
-                <button class="service-nav-btn" onclick="scrollToService('network')">Networks</button>
-                <button class="service-nav-btn" onclick="scrollToService('cctv')">CCTV</button>
-                <button class="service-nav-btn" onclick="scrollToService('repair')">Computer Repair</button>
-                <button class="service-nav-btn" onclick="scrollToService('software')">Software</button>
-                <button class="service-nav-btn" onclick="scrollToService('recovery')">Data Recovery</button>
-                <button class="service-nav-btn" onclick="scrollToService('support')">24/7 Support</button>
+                <button class="service-nav-btn active" type="button" onclick="scrollToService('website')">Website Dev</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('mobile')">Mobile Apps</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('management')">Management</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('network')">Networks</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('cctv')">CCTV</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('repair')">Computer Repair</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('software')">Software</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('recovery')">Data Recovery</button>
+                <button class="service-nav-btn" type="button" onclick="scrollToService('support')">24/7 Support</button>
             </div>
         </div>
     </section>
@@ -482,7 +483,7 @@
             <p>Contact us today for a free consultation and service quote</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-primary btn-large">Request Quote</a>
-                <a href="https://wa.me/255764830663?text=I%20need%20information%20about%20your%20services" class="btn btn-secondary btn-large" target="_blank">
+                <a href="https://wa.me/255764830663?text=I%20need%20information%20about%20your%20services" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> Chat Now
                 </a>
             </div>
@@ -490,11 +491,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Digital Core IT Solutions</h4>
+                    <h3>Digital Core IT Solutions</h3>
                     <p>Professional IT and network solutions company delivering innovative, reliable, and affordable services in Iringa, Tanzania.</p>
                     <div class="social-links">
                         <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -504,7 +507,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -515,14 +518,14 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h3>Contact Info</h3>
                     <p><i class="fas fa-phone"></i> <a href="tel:+255764830663">+255 764 830 663</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> Iringa, Tanzania</p>
                     <p><i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM | 24/7 Emergency Support</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h3>Services</h3>
                     <ul>
                         <li><a href="#website">Website Development</a></li>
                         <li><a href="#mobile">Mobile App Dev</a></li>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="View our completed projects: websites, mobile apps, networks, and IT solutions we have delivered to clients in Iringa and beyond.">
     <meta name="keywords" content="IT services Iringa Tanzania, website development, mobile app development, network setup, CCTV installation, data recovery, technical support">
     <meta name="robots" content="index, follow">
@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
@@ -47,6 +47,7 @@
             </div>
         </div>
     </nav>
+    <main>
 
     <!-- Page Header -->
     <section class="page-header">
@@ -60,12 +61,12 @@
     <section class="portfolio-filter">
         <div class="container">
             <div class="filter-buttons">
-                <button class="filter-btn active" onclick="filterPortfolio('all')">All Projects</button>
-                <button class="filter-btn" onclick="filterPortfolio('web')">Web Development</button>
-                <button class="filter-btn" onclick="filterPortfolio('mobile')">Mobile Apps</button>
-                <button class="filter-btn" onclick="filterPortfolio('network')">Networks</button>
-                <button class="filter-btn" onclick="filterPortfolio('cctv')">CCTV Systems</button>
-                <button class="filter-btn" onclick="filterPortfolio('systems')">Management Systems</button>
+                <button class="filter-btn active" type="button" onclick="filterPortfolio('all', this)">All Projects</button>
+                <button class="filter-btn" type="button" onclick="filterPortfolio('web', this)">Web Development</button>
+                <button class="filter-btn" type="button" onclick="filterPortfolio('mobile', this)">Mobile Apps</button>
+                <button class="filter-btn" type="button" onclick="filterPortfolio('network', this)">Networks</button>
+                <button class="filter-btn" type="button" onclick="filterPortfolio('cctv', this)">CCTV Systems</button>
+                <button class="filter-btn" type="button" onclick="filterPortfolio('systems', this)">Management Systems</button>
             </div>
         </div>
     </section>
@@ -365,7 +366,7 @@
             <p>Let's build something amazing together. Contact us for a free consultation.</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
-                <a href="https://wa.me/255764830663?text=I%20want%20to%20discuss%20a%20project" class="btn btn-secondary btn-large" target="_blank">
+                <a href="https://wa.me/255764830663?text=I%20want%20to%20discuss%20a%20project" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> Let's Talk
                 </a>
             </div>
@@ -373,11 +374,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Digital Core IT Solutions</h4>
+                    <h3>Digital Core IT Solutions</h3>
                     <p>Professional IT and network solutions company delivering innovative, reliable, and affordable services in Iringa, Tanzania.</p>
                     <div class="social-links">
                         <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -387,7 +390,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -398,14 +401,14 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h3>Contact Info</h3>
                     <p><i class="fas fa-phone"></i> <a href="tel:+255764830663">+255 764 830 663</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> Iringa, Tanzania</p>
                     <p><i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM | 24/7 Emergency Support</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h3>Services</h3>
                     <ul>
                         <li><a href="services.html#website">Website Development</a></li>
                         <li><a href="services.html#mobile">Mobile App Dev</a></li>

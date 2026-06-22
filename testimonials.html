@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Read success stories and testimonials from our satisfied clients across various industries.">
     <meta name="keywords" content="IT services Iringa Tanzania, website development, mobile app development, network setup, CCTV installation, data recovery, technical support">
     <meta name="robots" content="index, follow">
@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
@@ -47,6 +47,7 @@
             </div>
         </div>
     </nav>
+    <main>
 
     <!-- Page Header -->
     <section class="page-header">
@@ -75,18 +76,18 @@
                     </div>
                 </div>
                 <div class="carousel-controls">
-                    <span class="carousel-dot active" onclick="goToTestimonial(0)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(1)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(2)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(3)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(4)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(5)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(6)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(7)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(8)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(9)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(10)"></span>
-                    <span class="carousel-dot" onclick="goToTestimonial(11)"></span>
+                    <span class="carousel-dot active" role="button" tabindex="0" onclick="goToTestimonial(0)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(1)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(2)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(3)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(4)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(5)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(6)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(7)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(8)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(9)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(10)"></span>
+                    <span class="carousel-dot" role="button" tabindex="0" onclick="goToTestimonial(11)"></span>
                 </div>
             </div>
 
@@ -335,7 +336,7 @@
             <p>Let's build something amazing together</p>
             <div class="cta-buttons">
                 <a href="contact.html" class="btn btn-primary btn-large">Get Started Now</a>
-                <a href="https://wa.me/255764830663?text=Hi%20Digital%20Core!%20I%20want%20to%20learn%20more" class="btn btn-secondary btn-large" target="_blank">
+                <a href="https://wa.me/255764830663?text=Hi%20Digital%20Core!%20I%20want%20to%20learn%20more" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-whatsapp"></i> Chat Now
                 </a>
             </div>
@@ -343,11 +344,13 @@
     </section>
 
     <!-- Footer -->
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Digital Core IT Solutions</h4>
+                    <h3>Digital Core IT Solutions</h3>
                     <p>Professional IT and network solutions company delivering innovative, reliable, and affordable services in Iringa, Tanzania.</p>
                     <div class="social-links">
                         <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -357,7 +360,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -368,14 +371,14 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h3>Contact Info</h3>
                     <p><i class="fas fa-phone"></i> <a href="tel:+255764830663">+255 764 830 663</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:jerwinjeanadam591@gmail.com">jerwinjeanadam591@gmail.com</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> Iringa, Tanzania</p>
                     <p><i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM | 24/7 Emergency Support</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
+                    <h3>Services</h3>
                     <ul>
                         <li><a href="services.html#website">Website Development</a></li>
                         <li><a href="services.html#mobile">Mobile App Dev</a></li>

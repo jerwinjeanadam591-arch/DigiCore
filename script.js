@@ -137,27 +137,18 @@ dots.forEach((dot, index) => {
     });
 });
 
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#' && document.querySelector(href)) {
-            e.preventDefault();
-            document.querySelector(href).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
 // Portfolio filter
-function filterPortfolio(category) {
+function filterPortfolio(category, button) {
     const items = document.querySelectorAll('.portfolio-item');
     const buttons = document.querySelectorAll('.filter-btn');
 
     buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    if (button) {
+        button.classList.add('active');
+    } else {
+        const fallbackButton = document.querySelector(`.filter-btn[onclick*="${category}"]`);
+        if (fallbackButton) fallbackButton.classList.add('active');
+    }
 
     items.forEach(item => {
         if (category === 'all' || item.dataset.category === category) {
@@ -199,60 +190,6 @@ document.querySelectorAll('.faq-item.expandable').forEach(item => {
         });
     }
 });
-
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const service = document.getElementById('service').value;
-        const message = document.getElementById('message').value;
-
-        // Create WhatsApp message
-        const whatsappMessage = `Hello Digital Core IT Solutions!\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\n\nMessage:\n${message}`;
-
-        // Open WhatsApp with pre-filled message
-        const encodedMessage = encodeURIComponent(whatsappMessage);
-        window.open(`https://wa.me/255764830663?text=${encodedMessage}`, '_blank');
-
-        // Show thank you message
-        alert('Thank you! Your message will be sent via WhatsApp. We will respond shortly.');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
-
-// Get URL parameters for pre-filling forms
-function getUrlParameter(name) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(name);
-}
-
-// Pre-fill service field if coming from service page
-const serviceSelect = document.getElementById('service');
-if (serviceSelect) {
-    const serviceParam = getUrlParameter('service');
-    const packageParam = getUrlParameter('package');
-    
-    if (serviceParam) {
-        serviceSelect.value = serviceParam;
-    } else if (packageParam) {
-        serviceSelect.value = packageParam.includes('website') ? 'Website Development' :
-                             packageParam.includes('app') ? 'Mobile App' :
-                             packageParam.includes('system') ? 'Management System' :
-                             packageParam.includes('network') ? 'Network Setup' :
-                             packageParam.includes('cctv') ? 'CCTV Installation' :
-                             packageParam.includes('repair') ? 'Computer Repair' :
-                             packageParam.includes('software') ? 'Software Installation' :
-                             packageParam.includes('recovery') ? 'Data Recovery' :
-                             packageParam.includes('support') ? 'Technical Support' : '';
-    }
-}
 
 // Set active nav link
 function setActiveNavLink() {
