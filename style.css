@@ -204,9 +204,13 @@ a {
 
 .contact-strip-content {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 .strip-item {
@@ -215,6 +219,12 @@ a {
     gap: 10px;
     color: var(--dark-text);
     transition: var(--transition-fast);
+    min-width: min-content;
+}
+
+.strip-item span,
+.strip-item a {
+    white-space: nowrap;
 }
 
 .strip-item:hover {
