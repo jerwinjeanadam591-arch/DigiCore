@@ -4567,7 +4567,7 @@ h2 { font-size: clamp(1.25rem, 3vw, 2rem); }
   .nav-links { top: 56px; left: 8px; right: 8px; padding: 8px; }
   .cta-link, .btn, .quick-btn, .nav-links a { min-height: 48px !important; }
   .cta-link { padding: 10px 14px; font-size: 0.95rem; }
-  .hero { padding: 14px 0 !important; }
+  .hero { padding: 60px 0 !important; }
   .hero-title { font-size: 1.4rem; line-height: 1.25; }
 }
 
@@ -4595,7 +4595,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
   body { overflow-x: hidden; }
   .container { max-width: 100%; padding-left: 16px; padding-right: 16px; }
   section { padding: 50px 0 !important; }
-  .hero { padding: 18px 0; }
+  .hero { padding: 80px 0 !important; }
   .quick-intro { padding: 50px 0; }
   .hero-title { font-size: clamp(1.85rem, 7vw, 2.4rem); }
   .hero-subtitle { font-size: clamp(1rem, 3vw, 1.2rem); }
